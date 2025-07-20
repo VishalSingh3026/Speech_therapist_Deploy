@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
+import therapistImage from '../../assets/therapist-illustration.png';
+
 import { 
   Phone, 
   Mail, 
@@ -217,10 +219,11 @@ export const ContactSection = () => {
               {/* Speech Therapist Illustration */}
               <div className="mt-10 flex justify-center">
                 <img
-                  src="src/assets/therapist-illustration.png"
-                  alt="Speech therapist illustration"
-                  className="w-[300px] md:w-[400px] rounded-xl shadow-md"
+                    src={therapistImage}
+                    alt="Speech therapist illustration"
+                    className="w-[300px] md:w-[400px] rounded-xl shadow-md"
                 />
+
               </div>
             </CardContent>
           </Card>
