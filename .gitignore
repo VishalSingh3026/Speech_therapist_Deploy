@@ -1,0 +1,4 @@
+node_modules
+.env
+therapist-backend/node_modules
+speech-spark-portfolio-website/node_modules

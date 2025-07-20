@@ -1,0 +1,25 @@
+{
+  "name": "therapist-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'No build step required for serverless functions'",
+    "vercel-build": "echo 'Building for Vercel deployment'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express", "mongodb", "speech-therapy", "serverless"],
+  "author": "Your Name",
+  "license": "ISC",
+  "description": "Speech therapy backend API for consultation and contact management",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  }
+}
