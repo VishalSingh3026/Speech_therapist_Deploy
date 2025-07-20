@@ -217,7 +217,7 @@ export const ContactSection = () => {
               {/* Speech Therapist Illustration */}
               <div className="mt-10 flex justify-center">
                 <img
-                  src="src/assets/ChatGPT Image Jul 17, 2025, 10_07_23 PM.png"
+                  src="src/assets/therapist-illustration.png"
                   alt="Speech therapist illustration"
                   className="w-[300px] md:w-[400px] rounded-xl shadow-md"
                 />
