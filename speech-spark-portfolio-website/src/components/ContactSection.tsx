@@ -29,13 +29,16 @@ export const ContactSection = () => {
     e.preventDefault();
 
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+      console.log('🔵 Making API call to:', `${API_URL}/api/contact`);
+      
       const response = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
+      console.log('🔵 Response status:', response.status);
       const result = await response.json();
 
       if (result.success) {

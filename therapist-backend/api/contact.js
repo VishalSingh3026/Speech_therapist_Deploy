@@ -7,6 +7,10 @@ const { connectToDatabase } = require('../lib/db');
 const Contact = require('../models/Contact');
 
 module.exports = async (req, res) => {
+  console.log('🔵 Contact endpoint hit:', req.method, req.url);
+  console.log('🔵 Origin:', req.headers.origin);
+  console.log('🔵 Frontend URL env:', process.env.FRONTEND_URL);
+  
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', process.env.FRONTEND_URL || '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');

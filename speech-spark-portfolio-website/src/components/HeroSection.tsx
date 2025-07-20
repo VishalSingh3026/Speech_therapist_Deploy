@@ -20,7 +20,9 @@ export const HeroSection = () => {
     e.preventDefault();
 
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+      console.log('🔵 Making API call to:', `${API_URL}/api/consultation`);
+      
       const res = await fetch(`${API_URL}/api/consultation`, {
         method: "POST",
         headers: {
