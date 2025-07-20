@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "Speech therapy backend API for consultation and contact management",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "dependencies": {
     "cors": "^2.8.5",
